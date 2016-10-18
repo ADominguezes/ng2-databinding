@@ -1,0 +1,13 @@
+<div>
+  <!-- Interpolation -->
+  <h2> {{title}}</h2>
+  <p><b>5*2</b>, The result is <span class="color-red">{{5*2}}</span></p>
+  <!-- Event and attribute -->
+  <input type="button" class="btn btn-success" [value]="value" (click)="visible = !visible" />
+</div>
+<!-- Attribute -->
+<div class="contenido" [hidden]="visible">
+  <!-- ngModel -->
+  <input type="text" placeholder="Enter a name here" [(ngModel)]="yourName">
+  <div>Your name is {{yourName}}</div>
+</div>
